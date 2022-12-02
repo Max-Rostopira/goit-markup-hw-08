@@ -1,0 +1,105 @@
+.teamList__item {
+
+    width: 270px;
+
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+}
+
+.personCard {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+
+
+
+.teamSection {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+    background-color: #F5F4FA;
+
+}
+
+.teamSection__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--secondary-text-colour);
+}
+
+.personCard__title {
+
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--secondary-text-colour);
+    letter-spacing: 0.03em;
+}
+
+.personCard__subtitle {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-text-colour);
+    letter-spacing: 0.03em;
+}
+
+.teamList {
+    display: flex;
+    gap: 30px;
+}
+
+.cotialeList__link {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-button-colour);
+
+    transition-duration: var(--time-function);
+    transition-timing-function: var(--bezier-functiion);
+    transition-property: background-color;
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-background-colour);
+        }
+
+        
+}
+
+
+
+
+.cotialeList__icon {
+    fill: #AFB1B8;
+
+    transition-duration: var(--time-function);
+    transition-timing-function: var(--bezier-functiion);
+    transition-property: fill;
+
+    .cotialeList__link:hover &,
+    .cotialeList__link:focus & {
+            fill: #EEEEEE;
+        }
+}
+
+
+
+.cotialeList {
+    margin-top: 16px;
+    gap: 10px;
+
+    display: flex;
+}

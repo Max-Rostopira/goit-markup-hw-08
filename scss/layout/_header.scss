@@ -1,0 +1,141 @@
+
+.navList,
+.contactList {
+    display: flex;
+}
+
+.navContainer {
+    display: flex;
+}
+
+.contactList {
+    margin-left: auto;
+}
+
+.navList {
+    margin-left: 94px;
+
+}
+
+.navList__link,
+.contactList__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
+.mainNav__logo-text {
+    color: var(--button-background-colour);
+}
+
+.mainNav__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--secondary-text-colour);
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+}
+
+
+.navList__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-colour);
+
+    font-size: 14px;
+    line-height: 1.1;
+
+    transition-duration: var(--time-function);
+    transition-timing-function: var(--bezier-functiion);
+    transition-property: color;
+
+    &:hover,
+    &:focus {
+        color: var(--button-background-colour);
+        }
+
+}
+
+.nav__items {
+    position: relative;
+
+    &:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+.nav__items {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.navList__linkActive {
+    color: var(--button-background-colour);
+
+    &::after {
+            content: " ";
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: #2196F3;
+            border-radius: 2px;
+            bottom: -1px;
+    
+            transition-duration: var(--time-function);
+            transition-timing-function: var(--bezier-functiion);
+            transition-duration: color;
+        }
+}
+
+
+
+
+
+.contactList__link {
+
+    align-items: center;
+
+    display: flex;
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: var(--primary-text-colour);
+
+    transition-duration: var(--time-function);
+    transition-timing-function: var(--bezier-functiion);
+    transition-duration: color;
+
+    &:hover,
+    &:focus {
+            color: var(--button-background-colour);
+        }
+            &:hover .contactList__icon,
+            &:focus .contactList__icon {
+                fill: currentColor
+                }
+}
+
+
+
+.pageHeader {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.contactList__icon {
+    fill: #757575;
+    display: flex;
+    margin-right: 10px;
+}
+
+

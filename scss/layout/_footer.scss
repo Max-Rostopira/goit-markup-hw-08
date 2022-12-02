@@ -1,0 +1,74 @@
+.pageFooter {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
+.pageFooter__logo {
+    margin-bottom: 20px;
+
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: var(--secondary-button-colour);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.pageFooterAddress {
+    font-style: normal;
+
+}
+
+
+
+.address-title {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--secondary-button-colour);
+
+    transition-duration: var(--time-function);
+    transition-timing-function: var(--bezier-functiion);
+    transition-property: color;
+
+    &:hover,
+    &:focus {
+        color: var(--button-background-colour);
+        }
+        &:visited {
+            color: #FFFFFF;
+        }
+
+}
+
+
+
+
+
+
+.pageFooter__link {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-duration: var(--time-function);
+    transition-timing-function: var(--bezier-functiion);
+    transition-property: color;
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        }
+}
+
+
+
+.pageFooter__itemAdress {
+    margin-bottom: 9px;
+}
+
+.pageFooter__itemMail {
+    margin-bottom: 9px;
+}

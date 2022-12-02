@@ -1,0 +1,44 @@
+.workSection {
+    padding-top: 0;
+    padding-bottom: 94px;
+
+
+}
+
+
+.workSection__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--secondary-text-colour);
+}
+
+.workList {
+    display: flex;
+    gap: 30px;
+}
+
+.workList__item {
+    position: relative;
+}
+
+.workList__subtitle {
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+
+}
