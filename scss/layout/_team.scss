@@ -1,31 +1,68 @@
 .teamList__item {
 
-    width: 270px;
-
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: #FFFFFF;
+
+    @media screen and(min-width:480px) {
+        width: 450px;
+        }
+
+     @media screen and(min-width:768px) {
+        width: 354px;
+        }
+
+    @media screen and(min-width:1200px) {
+        @include padding-section;
+        width: 270px;
+        }
+    
 }
 
 .personCard {
 
+    @media screen and(min-width:480px) {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+        }
+
+     @media screen and(min-width:768px) {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+        }
+
+    @media screen and(min-width:1200px) {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 32px;
     padding-right: 32px;
-
+        }
 }
 
 
 
 .teamSection {
-    @include padding-section;
-    text-align: center;
-    background-color: #F5F4FA;
+    @media screen and(min-width:480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    @media screen and(min-width:768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+
+    @media screen and(min-width:1200px) {
+        @include padding-section;
+        text-align: center;
+        background-color: #F5F4FA;
+        }
 
 }
 
 .teamSection__title {
+    text-align: center;
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -52,8 +89,28 @@
 }
 
 .teamList {
-    display: flex;
     gap: 30px;
+
+@media screen and(min-width:480px) {
+        .teamList__photo{width:450px; height: 460px;} 
+    }
+
+@media screen and(min-width:768px) {
+        .teamList__photo{width: 354px; height: 374px;}
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+@media screen and(min-width:1200px) {
+        .teamList__photo {
+                width: 270px;
+                height: 260px;
+            }
+        display: flex;
+    }
+
+    
+    
 }
 
 .cotialeList__link {
@@ -99,6 +156,12 @@
 .cotialeList {
     margin-top: 16px;
     gap: 10px;
-
     display: flex;
+
+@media screen and(min-width:480px) {
+    justify-content: center;
+        }
+@media screen and(min-width:768px) {
+    justify-content: center;
+        }
 }

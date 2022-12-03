@@ -89,7 +89,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 420pxpx;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -538,14 +538,32 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/bcg-min.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/bcg-mobile-min.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/bcg-tablet-min.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/bcg-min.jpg);
+  }
 }
 
 .hero__title {
@@ -556,11 +574,27 @@ img {
   text-align: center;
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-button-colour);
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .hero__button {
@@ -588,8 +622,20 @@ img {
 
 .advantageSection {
   background-color: white;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .advantageSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantageSection {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantageList__title {
@@ -608,13 +654,38 @@ img {
   letter-spacing: 0.03em;
 }
 
-.advantageList__item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .advantageList__item {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantageList__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantageList__item {
+    width: 270px;
+  }
 }
 
-.advantageList {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .advantageList {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantageList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantageList {
+    display: flex;
+  }
 }
 
 .advantageList__container {
@@ -673,27 +744,74 @@ img {
 }
 
 .teamList__item {
-  width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
 }
-
-.personCard {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+@media screen and (min-width: 480px) {
+  .teamList__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teamList__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teamList__item {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 270px;
+  }
 }
 
-.teamSection {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
-  background-color: #F5F4FA;
+@media screen and (min-width: 480px) {
+  .personCard {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .personCard {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .personCard {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .teamSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teamSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teamSection {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+    background-color: #F5F4FA;
+  }
 }
 
 .teamSection__title {
+  text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -717,8 +835,32 @@ img {
 }
 
 .teamList {
-  display: flex;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .teamList .teamList__photo {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teamList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .teamList .teamList__photo {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teamList {
+    display: flex;
+  }
+  .teamList .teamList__photo {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .cotialeList__link {
@@ -752,11 +894,35 @@ img {
   gap: 10px;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .cotialeList {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cotialeList {
+    justify-content: center;
+  }
+}
 
-.clientsSection {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
+@media screen and (min-width: 480px) {
+  .clientsSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clientsSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clientsSection {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+  }
 }
 
 .clientsList__icon {
@@ -775,7 +941,16 @@ img {
   display: flex;
   gap: 30px;
 }
-
+@media screen and (min-width: 480px) {
+  .clientsList {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clientsList {
+    flex-wrap: wrap;
+  }
+}
 .clientsList__link {
   align-items: center;
   justify-content: center;
@@ -783,8 +958,6 @@ img {
   display: flex;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
   transition-duration: var(--time-function);
   transition-timing-function: var(--bezier-functiion);
   transition-property: solid;
@@ -792,6 +965,24 @@ img {
 .clientsList__link:hover, .clientsList__link:focus {
   border: 1px solid var(--button-background-colour);
   fill: var(--button-background-colour);
+}
+@media screen and (min-width: 480px) {
+  .clientsList__link {
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clientsList__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clientsList__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .pageFooter {
@@ -854,15 +1045,53 @@ img {
   color: #FFFFFF;
 }
 
-.portfolioSection {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .portfolioSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolioSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolioSection {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolioNav {
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .portfolioNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolioNav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolioCard__photo {
+    width: 450px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolioCard__photo {
+    width: 354px;
+    height: 294px;
+  }
 }
 
 .portfolioNav__item:not(:last-child) {
@@ -931,11 +1160,13 @@ img {
   flex-wrap: wrap;
 }
 
-.portfolioList__item {
-  width: 370px;
-}
-.portfolioList__item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .portfolioList__item {
+    width: 370px;
+  }
+  .portfolioList__item:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .portfolioList__link {

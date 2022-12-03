@@ -1,13 +1,4 @@
 .hero {
-
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../imeges/bcg-min.jpg);
-
-    padding-top: 200px;
-    padding-bottom: 200px;
-
     text-align: center;
 
     background-color: #2F303A;
@@ -15,6 +6,32 @@
     margin-right: auto;
     max-width: 1600px;
 
+    @media screen and(min-width:480px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../imeges/bcg-mobile-min.png);
+        }
+    
+    @media screen and(min-width:768px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../imeges/bcg-tablet-min.jpg);
+        }
+    
+    @media screen and(min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../imeges/bcg-min.jpg);
+        }
 }
 
 
@@ -28,11 +45,25 @@
 
     font-family: 'Roboto';
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-button-colour);
+
+    @media screen and(min-width:480px) {
+        font-size: 26px;
+        line-height: 1.6;
+        }
+    
+    @media screen and(min-width:768px) {
+        font-size: 26px;
+        line-height: 1.6;
+        }
+    
+    @media screen and(min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.4;
+        }
 }
 
 

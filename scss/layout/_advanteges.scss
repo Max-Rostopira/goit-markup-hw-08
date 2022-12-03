@@ -1,6 +1,17 @@
 .advantageSection {
     background-color: white;
-    @include padding-section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and(min-width:768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+    @media screen and(min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .advantageList__title {
@@ -24,13 +35,39 @@
 }
 
 .advantageList__item {
-    width: 270px;
+    @media screen and(min-width:480px) {
+        width: 450px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and(min-width:768px) {
+        width: 354px;
+    }
+
+    @media screen and(min-width:1200px) {
+        width: 270px;
+    }
+
 }
 
 
 .advantageList {
-    display: flex;
-    gap: 30px;
+
+    @media screen and(min-width:480px) {
+        gap: 30px;
+    }
+
+    @media screen and(min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and(min-width:1200px) {
+        display: flex;
+    }
+
+    
+    
 }
 
 
