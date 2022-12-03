@@ -1,7 +1,6 @@
 .advantageSection {
-    background-color: #FFFFFF;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    background-color: white;
+    @include padding-section;
 }
 
 .advantageList__title {

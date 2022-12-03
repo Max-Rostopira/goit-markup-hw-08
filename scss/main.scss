@@ -1,17 +1,17 @@
 @import "./utils/variables";
-@import "./utils/visually-hidden.scss";
+@import "./utils/visually-hidden";
 @import "./utils/mixins";
 
 @import "./base/common";
-@import "./base/container.scss" ;
+@import "./base/container";
 
 @import "./components/footer-sicial";
 @import "./components/footer-modal";
 @import "./components/backdrop";
-@import "./components/modalForm";
+@import "./components/modal-form";
 @import "./components/modal";
 
-@import "./layout/header.scss";
+@import "./layout/header";
 @import "./layout/hero";
 @import "./layout/advanteges";
 @import "./layout/work";

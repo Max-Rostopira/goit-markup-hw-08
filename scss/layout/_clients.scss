@@ -1,6 +1,5 @@
 .clientsSection {
-    padding-top: 94px;
-    padding-bottom: 94px;
+   @include padding-section;
     text-align: center;
 }
 

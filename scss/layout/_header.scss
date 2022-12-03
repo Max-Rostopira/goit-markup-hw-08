@@ -1,10 +1,17 @@
-
 .navList,
 .contactList {
     display: flex;
 }
 
+.mainNav{
+    display: flex;
+}
+
 .navContainer {
+   display: flex;
+}
+
+.pageHeader{
     display: flex;
 }
 
@@ -26,11 +33,12 @@
 
 
 
-.mainNav__logo-text {
+.mainNav__logo--blue {
     color: var(--button-background-colour);
 }
 
 .mainNav__logo {
+    
     padding-top: 24px;
     padding-bottom: 24px;
     color: var(--secondary-text-colour);
@@ -71,15 +79,8 @@
         }
 }
 
-.nav__items {
-    position: relative;
 
-    &:not(:last-child) {
-        margin-right: 50px;
-    }
-}
-
-.navList__linkActive {
+.navList__link--Active {
     color: var(--button-background-colour);
 
     &::after {

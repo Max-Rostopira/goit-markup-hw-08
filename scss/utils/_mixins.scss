@@ -1,0 +1,22 @@
+@mixin padding-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+@mixin mobile{
+    @media screen and(min-width:480px) {
+    @content    ;    
+    }
+}
+
+@mixin tablet {
+    @media screen and(min-width:768px) {
+    @content    ;
+    }
+}
+
+@mixin dekstop {
+    @media screen and(min-width:1200px) {
+        @content    ;
+    }
+}

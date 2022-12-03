@@ -19,8 +19,7 @@
 
 
 .teamSection {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include padding-section;
     text-align: center;
     background-color: #F5F4FA;
 
