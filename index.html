@@ -21,7 +21,7 @@
   <body>
     <!--Шапка навігації-->
 
-    <!-- <header class="pageHeader">
+    <header class="pageHeader">
       <div class="container navContainer">
         <nav class="mainNav">
           <a class="mainNav__logo" href="./"
@@ -29,20 +29,20 @@
           >
 
           <ul class="navList">
-            <li class="nav__items">
+            <li class="navList___item">
               <a href="#" class="navList__link navList__link--Active">Студія</a>
             </li>
-            <li class="nav__items">
+            <li class="navList___item">
               <a href="./potfolio.html" class="navList__link">Портфоліо</a>
             </li>
-            <li class="nav__items">
+            <li class="navList___item">
               <a href="#" class="navList__link">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contactList">
-          <li class="nav__items">
+          <li class="contactList__item">
             <a href="mailto:info@devstudio.com" class="contactList__link">
               <svg class="contactList__icon" width="16" height="12">
                 <use href="./imeges/icons.svg/symbol-defs.svg#icon-mail"></use>
@@ -50,7 +50,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="nav__items">
+          <li class="contactList__item">
             <a href="tell:+380961111111" class="contactList__link">
               <svg class="contactList__icon" width="10" height="16">
                 <use href="./imeges/icons.svg/symbol-defs.svg#icon-tell"></use>
@@ -60,7 +60,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <!--Головний блок-->
     <main>
@@ -230,7 +230,12 @@
               </div>
             </li>
             <li class="teamList__item">
-              <img class="teamList__photo" src="imeges/img(4)-min.jpg" alt="Ольга Рєпіна" width="270" />
+              <img
+                class="teamList__photo"
+                src="imeges/img(4)-min.jpg"
+                alt="Ольга Рєпіна"
+                width="270"
+              />
               <div class="personCard">
                 <h3 class="personCard__title">Ольга Рєпіна</h3>
                 <p class="personCard__subtitle" lang="en">Frontend Developer</p>
@@ -276,7 +281,7 @@
             </li>
             <li class="teamList__item">
               <img
-               class="teamList__photo"
+                class="teamList__photo"
                 src="imeges/img(5)-min.jpg"
                 alt="Микола Тарасов"
                 width="270"
@@ -542,16 +547,17 @@
 
     <!--BACKDROP MODAL-->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button" type="button" data-modal-close>
           <svg class="modal__icon" width="11" height="11">
             <use href="./imeges/icons.svg/symbol-defs.svg#icon-Vector-6"></use>
           </svg>
-        </button> -->
+        </button>
+
         <!--MODAL FORM-->
 
-        <!-- <form class="modalForm">
+        <form class="modalForm">
           <p class="modalForm__title">Залиште свої дані, ми вам передзвонимо</p>
 
           <div class="modalLable">
@@ -642,5 +648,5 @@
       </div>
     </div>
     <script src="./js/index.js"></script>
-  </body> -->
+  </body>
 </html>

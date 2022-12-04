@@ -1,3 +1,7 @@
+
+
+
+
 .navList,
 .contactList {
     display: flex;
@@ -16,7 +20,19 @@
 }
 
 .contactList {
-    margin-left: auto;
+
+    @media screen and(min-width:768px) {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        }
+
+    @media screen and(min-width:1200px) {
+        margin-left: auto;
+    }
+    
 }
 
 .navList {
@@ -24,11 +40,23 @@
 
 }
 
-.navList__link,
-.contactList__link {
+.navList__link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.contactList__link{
+
+    @media screen and(min-width:768px) {
+
+    }
+
+        @media screen and(min-width:1200px) {
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
 }
 
 
@@ -71,7 +99,18 @@
 
 }
 
-.nav__items {
+
+.contactList__item{
+    position: relative;
+
+    @media screen and(min-width:1200px){
+        &:not(:last-child) {
+                margin-right: 50px;
+            }
+    }
+}
+
+.navList___item {
     position: relative;
 
     &:not(:last-child) {

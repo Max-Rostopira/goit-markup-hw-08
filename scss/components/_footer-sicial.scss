@@ -36,22 +36,13 @@
 }
 
 
-
-
-
-.addres-container {
-
-    @media screen and(min-width:480px) {
-        flex-direction: column;
-        }
-
+.container.addres-container {
     @media screen and(min-width:1200px) {
         justify-content: space-between;
         display: flex;
         align-items: baseline;
-        }
-
-    
+        background-color: red;
+    }
 }
 
 .pageFooterCotial {

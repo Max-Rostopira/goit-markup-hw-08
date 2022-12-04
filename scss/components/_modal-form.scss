@@ -72,7 +72,8 @@
 .modalLable__coments {
     margin-top: 4px;
 
-    width: 448px;
+    width: 370px;
+
     height: 120px;
 
     padding-top: 12px;
@@ -96,6 +97,10 @@
             border: 1px solid #2196F3;
             border-radius: 4px;
         }
+
+    @media screen and(min-width:1200px) {
+        width: 528px;
+        }
 }
 
 
@@ -117,11 +122,18 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
+
+    @media screen and(min-width:1200px) {
+            font-size: 20px;
+            line-height: 1.15;
+        }
+
+
 }
 
 .modalCheck {
@@ -130,19 +142,25 @@
 }
 
 .modalCheck__title {
-    display: flex;
+    
     align-items: center;
 
     justify-content: center;
 
+    font-size: 12px;
+    line-height: 14px;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    
     letter-spacing: 0.03em;
     color: #757575;
 
-
+    
+    @media screen and(min-width:1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    }
 }
 
 .modalCheck__link {
