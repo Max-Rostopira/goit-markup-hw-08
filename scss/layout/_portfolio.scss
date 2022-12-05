@@ -110,6 +110,7 @@
 }
 
 .portfolioProject {
+    flex-grow: 1;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -166,6 +167,9 @@
 .portfolioList__link {
     outline: transparent;
     display: block;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 
     &:hover,
     &:focus {

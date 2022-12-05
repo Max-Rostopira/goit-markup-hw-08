@@ -44,7 +44,7 @@
 
     @media screen and(min-width:1200px) {
         justify-content: space-between;
-        display: flex;
+        flex-direction: row;
         align-items: baseline;
     }
 }
@@ -60,17 +60,14 @@
         margin-top: 0;
     }
 
-
-    
 }
 
 .pageFooterCotial__title {
 
     font-weight: 700;
-        font-size: 14px;
-        line-height: 1.1;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-    
-        color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
