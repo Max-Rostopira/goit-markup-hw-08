@@ -21,30 +21,28 @@
   <body>
     <!--Шапка навігації-->
 
-    <!-- <header class="pageHeader">
+    <header class="pageHeader">
       <div class="container navContainer">
         <nav class="mainNav">
           <a class="mainNav__logo" href="./"
             ><span class="mainNav__logo--blue">Web</span>Studio</a
           >
-
+          <div class="mobileNavigation"></div>
           <ul class="navList">
-            <li class="navList__item">
-              <a href="./index.html" class="navList__link">Студія</a>
+            <li class="navList___item">
+              <a href="#" class="navList__link navList__link--Active">Студія</a>
             </li>
-            <li class="navList__item">
-              <a href="#" class="navList__link navList__link--Active"
-                >Портфоліо</a
-              >
+            <li class="navList___item">
+              <a href="./potfolio.html" class="navList__link">Портфоліо</a>
             </li>
-            <li class="navList__item">
+            <li class="navList___item">
               <a href="#" class="navList__link">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contactList">
-          <li class="navList__item">
+          <li class="contactList__item">
             <a href="mailto:info@devstudio.com" class="contactList__link">
               <svg class="contactList__icon" width="16" height="12">
                 <use href="./imeges/icons.svg/symbol-defs.svg#icon-mail"></use>
@@ -52,7 +50,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="navList__item">
+          <li class="contactList__item">
             <a href="tell:+380961111111" class="contactList__link">
               <svg class="contactList__icon" width="10" height="16">
                 <use href="./imeges/icons.svg/symbol-defs.svg#icon-tell"></use>
@@ -61,8 +59,13 @@
             >
           </li>
         </ul>
+        <button class="menuButton js-open-menu" type="button">
+          <svg class="menuButton__icon">
+            <use href="./imeges/icons.svg/symbol-defs.svg#burger-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <!--Головний блок-->
 
@@ -418,5 +421,75 @@
         </div>
       </div>
     </footer>
+
+    <!--mobile menu-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu menuButton">
+        <svg
+          class="menuButton__icon--close"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use
+            href="./imeges/icons.svg/symbol-defs.svg#close-burger-icon"
+          ></use>
+        </svg>
+      </button>
+
+      <nav class="mobileNav">
+        <ul class="mobileNav__list">
+          <li class="mobileNav___item">
+            <a href="./index.html" class="mobileNav__link">Студія</a>
+          </li>
+          <li class="mobileNav___item">
+            <a href="#" class="mobileNav__link mobileNav__link--Active"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobileNav___item">
+            <a href="#" class="mobileNav__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobileContact">
+        <li class="mobileContact__item">
+          <a
+            class="mobileContact__link mobileContact__link--blue"
+            href="tell:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobileContact__item">
+          <a class="mobileContact__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobileCotiale">
+        <li class="mobileCotial__item">
+          <a class="mobileCotial__link" href="">Instagram</a>
+        </li>
+        <li class="mobileCotial__item">
+          <a class="mobileCotial__link" href="">Twitter</a>
+        </li>
+        <li class="mobileCotial__item">
+          <a class="mobileCotial__link" href="">Facebook</a>
+        </li>
+        <li class="mobileCotial__item">
+          <a class="mobileCotial__link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -8,14 +8,19 @@
     margin-bottom: auto;
     margin-left: auto;
 
+    &:hover,
+    &:focus {
+            fill: #2196F3;
+        }
+
     @media screen and(min-width:768px) {
             display: none;
         }
+           
 
 }
 
 .menuButton__icon{
-    fill: #212121;
     width: 24px;
     height: 24px;
 }
@@ -23,4 +28,6 @@
 .menuButton__icon--close{
     width: 19px;
     height: 19px;
+
+    
 }
