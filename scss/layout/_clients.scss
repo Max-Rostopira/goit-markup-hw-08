@@ -2,11 +2,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-     @media screen and(min-width:768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
     @media screen and(min-width:1200px) {
         @include padding-section;
         text-align: center;
@@ -29,22 +24,34 @@
 }
 
 .clientsList {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+
+    @media screen and(min-width:420px) {
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        }
 
     @media screen and(min-width:1200px) {
+        gap: 30px;
+        display: flex;
         flex-wrap: nowrap;
     }
     
-    
+}
+
+.clientsList__item:not(:last-child){
+    margin-bottom: 30px;
+    @media screen and(min-width:420px) {
+        margin-bottom: 0;
+    }
+
 }
 
 .clientsList__link {
     align-items: center;
     justify-content: center;
 
-    width: 210px;
+    width: 100%;
     height: 92px;
 
     outline: transparent;
@@ -60,6 +67,11 @@
     &:focus {
             border: 1px solid var(--button-background-colour);
             fill: var(--button-background-colour);
+        }
+
+    @media screen and(min-width:480px) {
+        width: 210px;
+        height: 92px;
         }
     
     @media screen and(min-width:768px) {

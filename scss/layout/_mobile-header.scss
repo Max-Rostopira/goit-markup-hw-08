@@ -23,9 +23,6 @@
     color: #2196F3;
 }
 
-.mobileNav{
-    margin-bottom: 100px;
-}
 
 .mobileContact{
     margin-bottom: 64px;
@@ -37,6 +34,7 @@
 
 .mobileCotiale{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mobileCotial__item{
@@ -65,5 +63,20 @@
 }
 
 .mobileContact__link:visited{
-    color: red;
+    color: blue;
+}
+
+.mobileNav{
+    display: block;
+}
+
+.mobileMenuTest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobileConteiner{
+    display: block;
+    
 }

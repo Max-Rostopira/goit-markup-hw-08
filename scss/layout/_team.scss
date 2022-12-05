@@ -1,9 +1,12 @@
 .teamList__item {
-    width: 450px;
 
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: #FFFFFF;
+
+    @media screen and(min-width:768px) {
+        width: 450px;
+        }
 
      @media screen and(min-width:768px) {
         width: 354px;
@@ -34,11 +37,6 @@
 .teamSection {
     padding-top: 60px;
     padding-bottom: 60px;
-   
-    @media screen and(min-width:768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        }
 
     @media screen and(min-width:1200px) {
         @include padding-section;
@@ -76,6 +74,7 @@
 }
 
 .teamList {
+    width: auto;
     gap: 30px;
 
 @media screen and(min-width:480px) {

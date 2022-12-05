@@ -81,6 +81,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -195,7 +197,7 @@ img {
   margin-top: 20px;
   padding-left: 16px;
   height: 50px;
-  width: 450px;
+  width: auto;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -208,6 +210,11 @@ img {
 .footerForm__input:hover, .footerForm__input:focus {
   border: 1px solid var(--button-background-colour);
 }
+@media screen and (min-width: 480px) {
+  .footerForm__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footerForm__input {
     margin-right: 12px;
@@ -219,6 +226,8 @@ img {
 .footerForm__button {
   margin-top: 20px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -447,7 +456,7 @@ img {
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 41px;
@@ -459,6 +468,11 @@ img {
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -686,6 +700,8 @@ img {
 
 .hero {
   text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
@@ -731,12 +747,6 @@ img {
     line-height: 1.6;
   }
 }
-@media screen and (min-width: 768px) {
-  .hero__title {
-    font-size: 26px;
-    line-height: 1.6;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
@@ -772,12 +782,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .advantageSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .advantageSection {
     padding-top: 94px;
@@ -802,8 +806,12 @@ img {
 }
 
 .advantageList__item {
-  width: 450px;
-  margin-bottom: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .advantageList__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantageList__item {
@@ -816,8 +824,10 @@ img {
   }
 }
 
-.advantageList {
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .advantageList {
+    gap: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantageList {
@@ -892,10 +902,14 @@ img {
 }
 
 .teamList__item {
-  width: 450px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .teamList__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .teamList__item {
@@ -927,12 +941,6 @@ img {
 .teamSection {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .teamSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .teamSection {
@@ -968,6 +976,7 @@ img {
 }
 
 .teamList {
+  width: auto;
   gap: 30px;
 }
 @media screen and (min-width: 480px) {
@@ -1033,12 +1042,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .clientsSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .clientsSection {
     padding-top: 94px;
@@ -1059,21 +1062,34 @@ img {
   fill: var(--button-background-colour);
 }
 
-.clientsList {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+@media screen and (min-width: 420px) {
+  .clientsList {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clientsList {
+    gap: 30px;
+    display: flex;
     flex-wrap: nowrap;
+  }
+}
+
+.clientsList__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 420px) {
+  .clientsList__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
 .clientsList__link {
   align-items: center;
   justify-content: center;
-  width: 210px;
+  width: 100%;
   height: 92px;
   outline: transparent;
   display: flex;
@@ -1086,6 +1102,12 @@ img {
 .clientsList__link:hover, .clientsList__link:focus {
   border: 1px solid var(--button-background-colour);
   fill: var(--button-background-colour);
+}
+@media screen and (min-width: 480px) {
+  .clientsList__link {
+    width: 210px;
+    height: 92px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clientsList__link {
@@ -1100,17 +1122,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .portfolioSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .portfolioSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.portfolioSection {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .portfolioSection {
@@ -1127,7 +1141,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .portfolioNav {
-    margin-bottom: 40px;
     justify-content: center;
   }
 }
@@ -1139,8 +1152,8 @@ img {
 }
 
 .portfolioCard__photo {
-  width: 450px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolioCard__photo {
@@ -1213,14 +1226,6 @@ img {
   padding-left: 24px;
   padding-right: 24px;
 }
-@media screen and (min-width: 768px) {
-  .portfolioProject {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .portfolioProject {
     padding-top: 30px;
@@ -1237,7 +1242,12 @@ img {
 }
 
 .portfolioList__item {
-  width: 450px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .portfolioList__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolioList__item {
@@ -1380,10 +1390,6 @@ img {
   color: #2196F3;
 }
 
-.mobileNav {
-  margin-bottom: 100px;
-}
-
 .mobileContact {
   margin-bottom: 64px;
 }
@@ -1394,6 +1400,7 @@ img {
 
 .mobileCotiale {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobileCotial__item {
@@ -1420,5 +1427,19 @@ img {
 }
 
 .mobileContact__link:visited {
-  color: red;
+  color: blue;
+}
+
+.mobileNav {
+  display: block;
+}
+
+.mobileMenuTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobileConteiner {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

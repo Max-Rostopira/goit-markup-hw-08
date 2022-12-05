@@ -27,7 +27,7 @@
 
     padding-left: 16px;
     height: 50px;
-    width: 450px;
+    width: auto;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
 
@@ -44,6 +44,11 @@
     &:focus {
             border: 1px solid var(--button-background-colour);
         }
+     
+    @media screen and(min-width:480px) {
+        width: 450px;
+        }
+
     @media screen and(min-width:1200px) {
         margin-right: 12px;
         width: 358px;
@@ -58,6 +63,8 @@
     margin-top: 20px;
 
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 
     width: 200px;
     height: 50px;
