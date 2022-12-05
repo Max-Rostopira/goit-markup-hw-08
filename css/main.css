@@ -308,7 +308,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modalLable__coments {
-    width: 528px;
+    width: 448px;
   }
 }
 
@@ -448,6 +448,45 @@ img {
   fill: var(--button-background-colour);
 }
 
+.menuButton {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+.menuButton__icon {
+  fill: #212121;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: white;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
 .navList,
 .contactList {
   display: flex;
@@ -465,6 +504,9 @@ img {
   display: flex;
 }
 
+.contactList {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .contactList {
     margin-left: auto;
@@ -480,7 +522,13 @@ img {
 }
 
 .navList {
-  margin-left: 94px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navList {
+    margin-left: 94px;
+    display: flex;
+  }
 }
 
 .navList__link {
@@ -760,6 +808,11 @@ img {
 .workSection {
   padding-top: 0;
   padding-bottom: 94px;
+}
+@media (max-width: 1199px) {
+  .workSection {
+    display: none;
+  }
 }
 
 .workSection__title {

@@ -20,6 +20,7 @@
 }
 
 .contactList {
+    display: none;
 
     @media screen and(min-width:768px) {
         margin-left: auto;
@@ -36,7 +37,15 @@
 }
 
 .navList {
-    margin-left: 94px;
+    display: none;
+
+    @media screen and(min-width:768px) {
+            margin-left: 94px;
+            display: flex;
+        }
+   
+
+    
 
 }
 
