@@ -35,10 +35,8 @@
 }
 
 .advantageList__item {
-    @media screen and(min-width:480px) {
-        width: 450px;
-        margin-bottom: 30px;
-    }
+    width: 450px;
+    margin-bottom: 30px;
 
     @media screen and(min-width:768px) {
         width: 354px;
@@ -52,10 +50,7 @@
 
 
 .advantageList {
-
-    @media screen and(min-width:480px) {
-        gap: 30px;
-    }
+    gap: 30px;
 
     @media screen and(min-width:768px) {
         display: flex;

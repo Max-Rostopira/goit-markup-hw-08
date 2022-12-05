@@ -801,11 +801,9 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
-  .advantageList__item {
-    width: 450px;
-    margin-bottom: 30px;
-  }
+.advantageList__item {
+  width: 450px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .advantageList__item {
@@ -818,10 +816,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .advantageList {
-    gap: 30px;
-  }
+.advantageList {
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .advantageList {
@@ -1033,11 +1029,9 @@ img {
   justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
-  .clientsSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.clientsSection {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .clientsSection {
@@ -1068,20 +1062,19 @@ img {
 .clientsList {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .clientsList {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
-@media screen and (min-width: 768px) {
-  .clientsList {
-    flex-wrap: wrap;
-  }
-}
+
 .clientsList__link {
   align-items: center;
   justify-content: center;
+  width: 210px;
+  height: 92px;
   outline: transparent;
   display: flex;
   border: 1px solid #AFB1B8;
@@ -1093,12 +1086,6 @@ img {
 .clientsList__link:hover, .clientsList__link:focus {
   border: 1px solid var(--button-background-colour);
   fill: var(--button-background-colour);
-}
-@media screen and (min-width: 480px) {
-  .clientsList__link {
-    width: 210px;
-    height: 92px;
-  }
 }
 @media screen and (min-width: 768px) {
   .clientsList__link {

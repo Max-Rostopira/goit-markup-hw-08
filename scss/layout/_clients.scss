@@ -1,8 +1,6 @@
 .clientsSection {
-    @media screen and(min-width:480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
 
      @media screen and(min-width:768px) {
         padding-top: 60px;
@@ -33,16 +31,10 @@
 .clientsList {
     display: flex;
     gap: 30px;
-    @media screen and(min-width:480px) {
-        flex-wrap: wrap;
-    }
-
-    @media screen and(min-width:768px) {
-        flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
 
     @media screen and(min-width:1200px) {
-    
+        flex-wrap: nowrap;
     }
     
     
@@ -51,6 +43,9 @@
 .clientsList__link {
     align-items: center;
     justify-content: center;
+
+    width: 210px;
+    height: 92px;
 
     outline: transparent;
     display: flex;
@@ -65,10 +60,6 @@
     &:focus {
             border: 1px solid var(--button-background-colour);
             fill: var(--button-background-colour);
-        }
-    @media screen and(min-width:480px) {
-        width: 210px;
-        height: 92px;
         }
     
     @media screen and(min-width:768px) {
