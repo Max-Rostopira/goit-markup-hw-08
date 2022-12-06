@@ -67,16 +67,17 @@
 }
 
 .mobileNav{
-    display: block;
-}
-
-.mobileMenuTest{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
 }
 
 .mobileConteiner{
-    display: block;
-    
+display: block;
+}
+
+.mobileMenuTest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
